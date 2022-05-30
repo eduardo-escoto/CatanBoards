@@ -1,6 +1,7 @@
+import networkx as nx
 class CatanBoard():
     def __init__(self):
-        self.board = nx.random_lobster(10, .5, .2)
+        self.board = create_board_scaffolding()
 
     def __str__(self):
         return self.board.nodes().__str__()
@@ -14,7 +15,7 @@ class CatanBoard():
     def create_board(self):
         pass
 
-    def create_board_scaffolding(self):
+    def create_board_scaffolding(self) -> nx.graph:
         pass
 
     def populate_tiles(self):
